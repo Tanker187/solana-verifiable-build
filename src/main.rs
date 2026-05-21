@@ -1720,11 +1720,11 @@ pub fn get_pkg_name_from_cargo_toml(cargo_toml_file: &str) -> Option<String> {
     Some(pkg.name)
 }
 
-pub fn print_build_params(address: &Address, build_params: &OtterBuildParams) {
+pub fn print_build_params(address: &Address, _build_params: &OtterBuildParams) {
     println!("----------------------------------------------------------------");
     println!("Address: {address:?}");
     println!("----------------------------------------------------------------");
-    println!("{build_params}");
+    println!("Build parameters: [REDACTED]");
 }
 
 pub async fn list_program_pdas(program_id: Address, client: &RpcClient) -> anyhow::Result<()> {
